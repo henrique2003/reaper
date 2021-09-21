@@ -127,6 +127,7 @@ nav ul li a {
 
 .about .row section:nth-child(1) {
   padding-right: 40px;
+  margin-left: 30px;
 }
 
 .about:nth-child(1) .row section:nth-child(2) img {
@@ -143,8 +144,8 @@ nav ul li a {
 }
 
 .about .row section h4 {
-  padding-bottom: 3px;
-  border-bottom: 1px solid var(--yellow);
+  padding-left: 25px;
+  border-left: 2px solid var(--yellow);
   color: var(--dark);
   font-size: 26px;
   font-weight: normal;
@@ -157,7 +158,26 @@ nav ul li a {
 }
 
 .hardware .row section:nth-child(2) {
-  margin-top: 90px;
+  margin-top: 40px;
+  margin-right: 30px;
+}
+
+.hardware .row section:nth-child(1) {
+  padding-right: 80px;
+}
+
+.hardware h3 {
+  color: var(--titleGrey);
+  margin: 60px auto;
+  margin-top: 150px;
+  font-size: 40px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 7px;
+  max-width: 250px;
+  width: 100%;
+  border-bottom: 1px solid var(--yellow);
 }
 
 .timeline {
@@ -178,7 +198,6 @@ nav ul li a {
 
 .functions {
   padding: 40px 50px;
-  /* margin-top: 10px; */
   background: var(--yellow);
 }
 
@@ -557,7 +576,7 @@ footer nav ul li:hover a {
   }
 }
 
-@media(max-width: 900px) {
+@media(max-width: 1200px) {
   .about .row {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -570,6 +589,7 @@ footer nav ul li:hover a {
 
   .about .row section:nth-child(1) {
     padding-right: 0;
+    margin-left: 0;
   }
 
   .about .row section:nth-child(2) {
@@ -581,8 +601,21 @@ footer nav ul li:hover a {
     margin: 0 auto;
   }
 
+  .hardware h3 {
+    margin-top: 120px;
+    margin-bottom: 35px;
+  }
+
+  .hardware .row section h4 {
+    margin-top: 0px;
+  }
+
   .hardware .row section:nth-child(2) {
     margin-top: 0px;
+  }
+  
+  .hardware .row section:nth-child(1) {
+    padding-right: 0;
   }
 
   /* Scrollbar */
