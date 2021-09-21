@@ -4,8 +4,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./packages/slick-1.8.1/slick/slick.css">
-  <link rel="stylesheet" href="./packages/slick-1.8.1/slick/slick-theme.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/timeline.css">
   <title>Reaper</title>
@@ -18,11 +16,11 @@
         <img src="./assets/icons/menu.png" alt="">
       </button>
       <ul id="toggle_nav">
-        <li><a href="">Sobre</a></li>
-        <li><a href="">Criação</a></li>
-        <li><a href="">Funcionaliades</a></li>
-        <li><a href="">Equipe</a></li>
-        <li><a href="">Contato</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#hardware">Hardware</a></li>
+        <li><a href="#functions">Funcionaliades</a></li>
+        <li><a href="#team">Equipe</a></li>
+        <li><a href="#contact">Contato</a></li>
       </ul>
     </nav>
   </header>
@@ -30,7 +28,7 @@
     <div class="introduction">
       <img src="./assets/images/reaper.png">
     </div>
-    <div class="about">
+    <div id="about" class="about">
       <div class="row">
         <section>
           <h4>Um pouco mais sobre o robo</h4>
@@ -115,7 +113,19 @@
         </ul>
       </section>
     </article>
-    <div class="functions">
+    <div id="hardware" class="about hardware">
+      <div class="hr"></div>
+      <div class="row">
+        <section>
+          <img src="./assets/images/hardware.png" alt="">
+        </section>
+        <section>
+          <h4>Um pouco mais sobre o robo</h4>
+          <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos.</p>
+        </section>
+      </div>
+    </div>
+    <div id="functions" class="functions">
       <h3>Funcionalidades</h3>
       <div class="row">
         <div class="item">
@@ -132,7 +142,7 @@
         </div>
       </div>
     </div>
-    <div class="team">
+    <div id="team" class="team">
       <h3>Equipe</h3>
       <p>Conheça os criadores do <span>reaper</span></p>
       <div class="row">
@@ -177,7 +187,7 @@
         <div><img src="./assets/images/robot-8.jpg" alt=""></div>
       </div>
     </div>
-    <div class="contact">
+    <div id="contact" class="contact">
       <h3>Contato</h3>
       <p>Tem alguma dúvida ? Nos mande uma mensagem</p>
 
@@ -199,6 +209,21 @@
         <button type="submit">Enviar</button>
       </form>
     </div>
+    <footer>
+      <h3>Reaper</h3>
+      <nav>
+        <ul>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#hardware">Hardware</a></li>
+          <li><a href="#functions">Funcionaliades</a></li>
+          <li><a href="#team">Equipe</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="line"></div>
+      <p>@Reaper todos os direitos reservaods</p>
+      <p>Politica de Privacidade | Termos e Condições</p>
+    </footer>
   </main>
   <script src="./js/navbar.js"></script>
 </body>
