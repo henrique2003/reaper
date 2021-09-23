@@ -515,7 +515,7 @@ footer nav ul li:hover a {
 
 @media(max-width: 1050px) {
   header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -656,6 +656,19 @@ footer nav ul li:hover a {
   }
 }
 
+@media(max-width: 800px) {
+  .introduction {
+    background-image: url(../assets/images/initial_bg-2.png);
+    background-position: center center;
+    padding: 0;
+  }
+
+  .introduction img {
+    padding: 60px 0;
+    max-width: 300px;
+  }
+}
+
 @media(max-width: 750px) {
   .contact form .row {
     grid-template-columns: repeat(1, 1fr);
@@ -666,9 +679,17 @@ footer nav ul li:hover a {
   .timeline h3 {
     margin-bottom: 90px;
   }
+
+  .introduction img {
+    padding: 40px 0;
+  }
 }
 
 @media(max-width: 600px) {
+  .introduction img {
+    padding: 20px 0;
+  }
+  
   .about {
     margin-top: 30px;
     padding: 0 20px;
@@ -691,5 +712,12 @@ footer nav ul li:hover a {
   .galery .carousel img {
     width: 300px;
     max-height: 180px;
+  }
+}
+
+@media(max-width: 500px) {
+  .introduction img {
+    padding: 0;
+    margin-top: 80px;
   }
 }
